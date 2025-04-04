@@ -41,14 +41,14 @@ const CreateTask = () => {
         <div className='p-5 bg-black mt-5 rounded'>
            <form
         onSubmit={submitHandler}
-        className="mt-20 bg-gray-900 text-white p-9 rounded-lg shadow-lg max-w-5xl mx-auto grid grid-cols-2 gap-5"
+        className="mt-20 bg-gray-900 text-white p-6 sm:p-9 rounded-lg shadow-lg max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-5"
       >
         {/* Left Section */}
         <div>
-          <h2 className="text-3xl font-extrabold mb-4">Create a Task</h2>
+          <h2 className="text-2xl sm:text-3xl font-extrabold mb-4">Create a Task</h2>
 
           {/* Task Title */}
-          <label className="text-xl font-bold block text-gray-300 mb-2">
+          <label className="text-lg sm:text-xl font-bold block text-gray-300 mb-2">
             Task Title
           </label>
           <input
@@ -60,7 +60,7 @@ const CreateTask = () => {
           />
 
           {/* Date */}
-          <label className="text-xl font-bold block text-gray-300 mt-4 mb-2">
+          <label className="text-lg sm:text-xl font-bold block text-gray-300 mt-4 mb-2">
             Date
           </label>
           <input
@@ -71,7 +71,7 @@ const CreateTask = () => {
           />
 
           {/* Assign */}
-          <label className="text-xl font-bold block text-gray-300 mt-4 mb-2">
+          <label className="text-lg sm:text-xl font-bold block text-gray-300 mt-4 mb-2">
             Assign To
           </label>
           <input
@@ -83,7 +83,7 @@ const CreateTask = () => {
           />
 
           {/* Category */}
-          <label className="text-xl font-bold block text-gray-300 mt-4 mb-2">
+          <label className="text-lg sm:text-xl font-bold block text-gray-300 mt-4 mb-2">
             Category
           </label>
           <input
@@ -99,7 +99,7 @@ const CreateTask = () => {
         <div className="flex flex-col justify-between">
           {/* Description */}
           <div>
-            <label className=" mt-13 text-xl font-bold block text-gray-300 mb-2">
+            <label className="text-lg py-8 sm:text-xl font-bold block text-gray-300 mt-4 sm:mt-0 mb-0">
               Description
             </label>
             <textarea
